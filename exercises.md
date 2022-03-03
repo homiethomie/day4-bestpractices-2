@@ -50,16 +50,21 @@ mpirun python mpi_ranks.py
 Running into the following error code when executing the command:
 Fatal error in MPI_Init_thread: Invalid group, error stack:
 
-when trying it on the davinci
+when trying it on the davinci server, I don't seem to be able to install the necessary package there:
+-bash-4.2$ python -m pip install mpi4p
+/usr/bin/python: No module named pip
+-bash-4.2$ conda install -c conda-forge mpi4pi
+-bash: conda: command not found
 #### b. Write a small script ```mpi_sum.py``` which calculates the sum over all ranks and prints the result from the process with rank 0.
 Hint: Have a look at the tutorials from the mpi4py documentation page: [https://mpi4py.scipy.org/docs/usrman/tutorial.html](https://mpi4py.scipy.org/docs/usrman/tutorial.html)
 
 ## 3. Plotting with matplotlib
 
 #### a. Download the jupyter notebook [customized_plotting.ipynb](customized_plotting.ipynb) and try to understand the individual steps in creating a plot and customizing it
+Done
 
 #### b. Produce your own data (curves, images, point clouds, etc...) and create a nice plot. Get inspired by the [matplotlib gallery](https://matplotlib.org/gallery/index.html) and use the extensive documentation of the [pyplot API](https://matplotlib.org/api/pyplot_summary.html)
-
+added 'own_customized_plot.ipynb' to the repository
 
 ## 4. Testing code with py.test
 
